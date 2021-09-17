@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html style="background-image:url(background2.jpg);font-family:Helvetica;">
+<header>
+<title>Abstractions</title>
+</header>
+<style>
+.dropbtn {
+    background-color: black;
+	margin-top: 5%;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    border: 3px;
+	width: 250%;
+}
+.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 14.9%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+	background-color:rgb(222, 222, 222);
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+	background-color: rgb(232, 76, 61);
+	color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(232, 76, 61);
+	color: white;
+}
+
+.hvr {
+	text-decoration: none;
+	background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    border: 3px;
+	width: 250%;
+}
+
+.hvr:hover {
+	background-color: rgb(232, 76, 61);
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: rgb(222, 222, 222);
+	border:2px solid black;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: rgb(222, 222, 222);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgb(232, 76, 61);
+	color:white;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: rgb(232, 76, 61);
+	color:white;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+	background-color: white;
+    padding: 6px 12px;
+}
+</style>
+
+<h1 style="margin-left:6.8%;">My Abstractions</h1>
+
+
+<a href="Homepage.html"><button class="hvr" style="width:16.6%; background-position:right;">Home</button></a>
+<a href="Innovations.html"><button class="hvr" style="width:16.6%; background-position:right;">Innovations</button></a>
+<a href="Abstractions.html"><button class="hvr" style="width:16.6%; background-position:right;">My Abstractions</button></a>
+
+<div class="dropdown" style="width:15%;">
+	<a href="InternetofThings.html"><button class="dropbtn" style="width:100%; background-position:right;">Internet of Things</button></a>
+	<div class="dropdown-content">
+		<a href="IPLayers.html">IP Layers</a>
+		<a href="Cybersecurity.html">Cybersecurity</a>
+		<a href="Cloud.html">Data and the Cloud</a>
+  </div>
+</div>
+
+<a href="Projects.html"><button style="width:16.6%; background-position:right;" class="hvr">My Projects</button></a>
+<a href="GlobalImpact.html"><button style="width:16.6%; background-position:right;" class="hvr">Global Impact</button></a>
+
+<p></p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'AB1')">Abstraction 1</button>
+  <button class="tablinks" onclick="openCity(event, 'AB2')">Abstraction 2</button>
+  <button class="tablinks" onclick="openCity(event, 'AB3')">Abstraction 3</button>
+  <button class="tablinks" onclick="openCity(event, 'AB4')">Abstraction 4</button>
+  <button class="tablinks" onclick="openCity(event, 'AB5')">Abstraction 5</button>
+  <button class="tablinks" onclick="openCity(event, 'AB6')">Abstraction 6</button>
+  <button class="tablinks" onclick="openCity(event, 'AB7')">Abstraction 7</button>
+  <button class="tablinks" onclick="openCity(event, 'AB8')">Abstraction 8</button>
+  <button class="tablinks" onclick="openCity(event, 'AB9')">Abstraction 9</button>
+  <button class="tablinks" onclick="openCity(event, 'AB10')">Abstraction 10</button>
+</div>
+
+<div id="AB1" class="tabcontent">
+  <h3 style="margin-left:5%;">Start Over</h3>
+  <img src="Abstraction1.jpg" alt="Picture of Ethan Haarer" width="60%" height="40%" hspace="3%">
+  <p style="margin-left:5%;">This abstraction clears the play area of all graphical effects (removes all drawing that has occurred) puts the cake object outside the observable screen, and sets the size of the sprite to twenty-five per cent of that of its regular size, every time the 'start' button is pressed. </p> 
+</div>
+
+<div id="AB2" class="tabcontent">
+  <h3 style="margin-left:5%;">Shake Present</h3>
+  <img src="Abstraction2.jpg" alt="Picture of Ethan Haarer" width="60%" height="40%" hspace="3%">
+  <p style="margin-left:5%;">On start, this function sets the object so it aligns it towards the top of the screen, then it shakes the object right 15 degrees, left 30 degrees, then right 15 degrees, until the variable, not clicked, equals zero.</p>
+</div>
+
+<div id="AB3" class="tabcontent">
+  <h3 style="margin-left:5%;">Fade In</h3>
+  <img src="Abstraction3.jpg" alt="Picture of Ethan Haarer" width="60%" height="40%" hspace="3%">
+  <p style="margin-left:5%;">This Abstraction fades in a completely transparent object by increasing it's opacity by 10% ten times until the object is fully visible.</p>
+</div>
+
+<div id="AB4" class="tabcontent">
+  <h3 style="margin-left:5%;">All Loops SONG1</h3>
+  <img src="Abstraction4.jpg" alt="Picture of Ethan Haarer" width="60%" height="40%" hspace="3%">
+  <p style="margin-left:5%;">This function calls all of the loops for a song, three of which repeats a beat each, and the final loop alternates two sound files for the entire song.</p>
+</div>
+
+<div id="AB5" class="tabcontent">
+  <h3 style="margin-left:5%;">All Noises</h3>
+  <img src="Abstraction5.jpg" alt="Picture of Ethan Haarer" width="60%" height="40%" hspace="3%">
+  <p style="margin-left:5%;">This Abstraction holds two loops, that each alternate two different sound files, the first loop altenating s3piano3 and s3piano4, and the second alternating the files s3piano4 and s3piano6</p>
+</div>
+
+<div id="AB6" class="tabcontent">
+  <h3 style="margin-left:5%;">Conditionals</h3>
+  <img src="Abstraction6.jpg" alt="Picture of Ethan Haarer" width="60%" height="40%" hspace="3%">
+  <p style="margin-left:5%;">This abstraction calls itself at the start of the program, and processes the input of the user each time it is allowed to be inputted. Based on the input, checked with a list of titles, the program either calls the functions Song1, Song2, or Song3. If the input is 'random' then the program picks a random number (1-3) and chooses a song based on that. If the input given doesn't match any known inputs foe the program, then the program tells the user that their input is invalid.</p>
+</div>
+
+<div id="AB7" class="tabcontent">
+  <h3 style="margin-left:5%;">Titlescreen</h3>
+  <img src="Abstraction7.jpg" alt="Picture of Ethan Haarer" width="60%" height="40%" hspace="3%">
+  <p style="margin-left:5%;">This function calls this text- art each time the program starts, or the game is restarted after the user's health equals zero.</p>
+</div>
+
+<div id="AB8" class="tabcontent">
+  <h3 style="margin-left:5%;">Market Action</h3>
+  <img src="Abstraction8.jpg" alt="Picture of Ethan Haarer" width="60%" height="40%" hspace="3%">
+  <p style="margin-left:5%;">This algorithm tests a user's input and then disserns if the user has a high enough playermoney value to increase their player attack or player defense by the value of the price of the equipment. If so, then the item level for that object is increased by one, money is taken away, and the desired variable is increased. If not, then an error message is displayed and no 'transaction' occurs.</p>
+</div>
+
+<div id="AB9" class="tabcontent">
+  <h3 style="margin-left:5%;">Start Input</h3>
+  <img src="Abstraction9.jpg" alt="Picture of Ethan Haarer" width="60%" height="40%" hspace="3%">
+  <p style="margin-left:5%;">This Abstraction is called when the program starts, or when it restarts after the palyer 'dies' and it checks a user's input. If the input equals 'start' then the program continues and the start() function is called, but if the user doesn't input 'start' then an error message is displayed and the user is asked for input again until they input 'start'.</p>
+</div>
+
+<div id="AB10" class="tabcontent">
+  <h3 style="margin-left:5%;">Display</h3>
+  <img src="Abstraction10.jpg" alt="Picture of Ethan Haarer" width="60%" height="40%" hspace="3%">
+  <p style="margin-left:5%;">This abstraction prints out a user's 'stats' eachntime a new event occurs in the program by printing a discription of a variable and the dalue of the variable itself.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</html>

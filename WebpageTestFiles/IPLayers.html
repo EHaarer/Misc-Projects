@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html style="background-image:url(background2.jpg);font-family:Helvetica;">
+
+<header>
+<title>IP Layers</title>
+</header>
+<style>
+.dropbtn {
+    background-color: black;
+	margin-top: 5%;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    border: 3px;
+	width: 250%;
+}
+.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 14.9%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+	background-color:rgb(222, 222, 222);
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+	background-color: rgb(232, 76, 61);
+	color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(232, 76, 61);
+		color: white;
+}
+
+.hvr {
+	text-decoration: none;
+	background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    border: 3px;
+	width: 250%;
+}
+
+.hvr:hover {
+	background-color: rgb(232, 76, 61);
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: rgb(222, 222, 222);
+	border:2px solid black;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: rgb(222, 222, 222);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgb(232, 76, 61);
+	color:white;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: rgb(232, 76, 61);
+	color:white;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+	background-color: white;
+    padding: 6px 12px;
+}
+
+</style>
+
+<h1 style="margin-left:6.8%;">IP Layers</h1>
+
+
+<a href="Homepage.html"><button class="hvr" style="width:16.6%; background-position:right;">Home</button></a>
+<a href="Innovations.html"><button class="hvr" style="width:16.6%; background-position:right;">Innovations</button></a>
+<a href="Abstractions.html"><button class="hvr" style="width:16.6%; background-position:right;">My Abstractions</button></a>
+
+<div class="dropdown" style="width:15%;">
+	<a href="InternetofThings.html"><button class="dropbtn" style="width:100%; background-position:right;">Internet of Things</button></a>
+	<div class="dropdown-content">
+		<a href="IPLayers.html">IP Layers</a>
+		<a href="Cybersecurity.html">Cybersecurity</a>
+		<a href="Cloud.html">Data and the Cloud</a>
+  </div>
+</div>
+
+<a href="Projects.html"><button style="width:16.6%; background-position:right;" class="hvr">My Projects</button></a>
+<a href="GlobalImpact.html"><button style="width:16.6%; background-position:right;" class="hvr">Global Impact</button></a>
+
+<p></p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'IPL1')">Physical Layer</button>
+  <button class="tablinks" onclick="openCity(event, 'IPL2')">Data-Link Layer</button>
+  <button class="tablinks" onclick="openCity(event, 'IPL3')">Network Layer</button>
+  <button class="tablinks" onclick="openCity(event, 'IPL4')">Transport Layer</button>
+  <button class="tablinks" onclick="openCity(event, 'IPL5')">Session Layer</button>
+  <button class="tablinks" onclick="openCity(event, 'IPL6')">Presentation Layer</button>
+  <button class="tablinks" onclick="openCity(event, 'IPL7')">Application Layer</button>
+  <button class="tablinks" onclick="openCity(event, 'IPL8')">Visual Representation</button>
+</div>
+
+<div id="IPL1" class="tabcontent">
+  <h3 style="margin-left:5%;">What Is It?</h3>
+  <p style="font-size:20px;">This Layer is the most basic layer of Data Transfer, and deals with bits flowing through physical methods, including wires, radio waves, etc. and deals with the hardware that sends or recieves data on a network.</p> 
+</div>
+
+<div id="IPL2" class="tabcontent">
+  <h3 style="margin-left:5%;">What Is It?</h3>
+  <p style="font-size:20px;">This Layer deals with the encoding and decoding of packets into bits, and handles errors that occur during the Physical layer. This layer is also split into to sub-layers: The Logic Lik Control and the Media Access Control, controlling error-checking, and dealing with how a user access information on a network, respectively.</p> 
+</div>
+
+<div id="IPL3" class="tabcontent">
+  <h3 style="margin-left:5%;">What Is It?</h3>
+  <p style="font-size:20px;">This Layer deals with switching and routing of information over the internet across nodes. It also deals with addressing of packets, packet sequencing, and internetworking.</p> 
+</div>
+
+<div id="IPL4" class="tabcontent">
+  <h3 style="margin-left:5%;">What Is It?</h3>
+  <p style="font-size:20px;">This Layer deals with flow control and the transfer of data between computers, and ensures that there has been a complete data transfer between the two computers.</p> 
+</div>
+
+<div id="IPL5" class="tabcontent">
+  <h3 style="margin-left:5%;">What Is It?</h3>
+  <p style="font-size:20px;">This Layer deals with establishig and ending connections between two computers. It also manages exchanges and dialogues between the two computers.</p> 
+</div>
+
+<div id="IPL6" class="tabcontent">
+  <h3 style="margin-left:5%;">What Is It?</h3>
+  <p style="font-size:20px;">This Layer deals with transforming data and information into a form that the application layer can accept. It also formats and Encrypts data that is sent across a network. This allows the data to be free from compatability issues.</p> 
+</div>
+
+<div id="IPL7" class="tabcontent">
+  <h3 style="margin-left:5%;">What Is It?</h3>
+  <p style="font-size:20px;">This layer identifies what computers are trying to communicate, and if the current network will allow them to communicate. This Layer is then used to send information/recieve information to/from the other computer that is being communicated to. It also checks for user authentication and if the other computer is a reliable source from which to recieve information.</p> 
+</div>
+
+<p> </p>
+
+<div id="IPL8" class="tabcontent">
+  <h3 style="margin-left:5%;">Visual of how Information is sent over the Internet</h3>
+  <img src="OSI.jpg" alt="OSI Layers" width="20%" height="25%" vspace="2%">
+</div>
+
+<p> </p>
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</html>

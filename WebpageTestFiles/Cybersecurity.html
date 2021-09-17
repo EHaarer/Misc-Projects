@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html style="background-image:url(background2.jpg);font-family:Helvetica;">
+
+<header>
+<title>Cybersecurity</title>
+</header>
+<style>
+.dropbtn {
+    background-color: black;
+	margin-top: 5%;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    border: 3px;
+	width: 250%;
+}
+.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 14.9%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+	background-color:rgb(222, 222, 222);
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+	background-color: rgb(232, 76, 61);
+	color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(232, 76, 61);
+		color: white;
+}
+
+.hvr {
+	text-decoration: none;
+	background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    border: 3px;
+	width: 250%;
+}
+
+.hvr:hover {
+	background-color: rgb(232, 76, 61);
+}
+
+
+.colur {
+	text-decoration: none;
+	color:white;
+}
+
+.colur:hover {
+	color:rgb(232, 76, 61);
+}
+
+</style>
+
+<h1 style="margin-left:6.8%;">Cybersecurity</h1>
+
+
+<a href="Homepage.html"><button class="hvr" style="width:16.6%; background-position:right;">Home</button></a>
+<a href="Innovations.html"><button class="hvr" style="width:16.6%; background-position:right;">Innovations</button></a>
+<a href="Abstractions.html"><button class="hvr" style="width:16.6%; background-position:right;">My Abstractions</button></a>
+
+<div class="dropdown" style="width:15%;">
+	<a href="InternetofThings.html"><button class="dropbtn" style="width:100%; background-position:right;">Internet of Things</button></a>
+	<div class="dropdown-content">
+		<a href="IPLayers.html">IP Layers</a>
+		<a href="Cybersecurity.html">Cybersecurity</a>
+		<a href="Cloud.html">Data and the Cloud</a>
+  </div>
+</div>
+
+<a href="Projects.html"><button style="width:16.6%; background-position:right;" class="hvr">My Projects</button></a>
+<a href="GlobalImpact.html"><button style="width:16.6%; background-position:right;" class="hvr">Global Impact</button></a>
+
+<p></p>
+
+<h1 style="margin-left:5%;">SPOOFING</h1>
+
+<h2 style="margin-left:8%;">What is spoofing? What different types of spoofing are there?</h2>
+
+<p style="margin-left:5%;font-size:20px; color:white;">Spoofing is the disguising of malicious material as trusted materials and data. The most common of which is IP-Spoofing, which is where Hackers replace their IP address with a legitimate IP address which computers trust, and sends packets to these users as ‘trusted packets’ and allowing for ensuing hacks to occur.
+The second example of spoofing is called ARP-Spoofing, which is when a hacker maps their IP address to a company's Media Access Control (MAC) address, which allows hackers to intercept packets being sent to MAC addresses, stealing potentially valuable and confidential data
+The third type of Spoofing is DNS-Spoofing, which is is when a hacker redirects a domain name of a trusted website, or a website to a Legitimate-looking site that further spreads other virus software like worms or malware.
+</p>
+
+<h2 style="margin-left:8%;">Digital Artifact</h2>
+
+<img src="Artifact.jpg" alt="Picture of Ethan Haarer" width="40%" height="30%" align="left" hspace="3%" border="3px solid black">
+
+<p style="margin-left:5%;font-size:20px; color:white; margin-top:5%; margin-right:5%;">This artifact shows a user attmpting to go to google.com but he mispells it, and is instead taken to a malicious website, that looks 'exactly' like google.com. This fake website then send the user packets of information, and potentially even some malware that infects the user's computer.</p>
+
+<p style="margin-left:5%;font-size:20px;vspace:3%;" color="rgb(255, 132, 119)"><a class="colur" href="https://www.pcworld.com/article/125263/article.html">Here is the Link to a real-world example of Spoofing</a></p>
+
+</html>

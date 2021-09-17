@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html style="background-image:url(background2.jpg); font-family:Helvetica;">
+
+<header>
+<title>Internet of Things</title>
+</header>
+<style>
+.dropbtn {
+    background-color: black;
+	margin-top: 5%;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    border: 3px;
+	width: 250%;
+}
+.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 14.9%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+	background-color:rgb(222, 222, 222);
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+	background-color: rgb(232, 76, 61);
+	color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(232, 76, 61);
+		color: white;
+}
+
+.hvr {
+	text-decoration: none;
+	background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    border: 3px;
+	width: 250%;
+}
+
+.hvr:hover {
+	background-color: rgb(232, 76, 61);
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: rgb(222, 222, 222);
+	border:2px solid black;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: rgb(222, 222, 222);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgb(232, 76, 61);
+	color:white;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: rgb(232, 76, 61);
+	color:white;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+	background-color: white;
+    padding: 6px 12px;
+}
+
+</style>
+
+<h1 style="margin-left:6.8%;">Internet of Things</h1>
+
+
+<a href="Homepage.html"><button class="hvr" style="width:16.6%; background-position:right;">Home</button></a>
+<a href="Innovations.html"><button class="hvr" style="width:16.6%; background-position:right;">Innovations</button></a>
+<a href="Abstractions.html"><button class="hvr" style="width:16.6%; background-position:right;">My Abstractions</button></a>
+
+<div class="dropdown" style="width:15%;">
+	<a href="InternetofThings.html"><button class="dropbtn" style="width:100%; background-position:right;">Internet of Things</button></a>
+	<div class="dropdown-content">
+		<a href="IPLayers.html">IP Layers</a>
+		<a href="Cybersecurity.html">Cybersecurity</a>
+		<a href="Cloud.html">Data and the Cloud</a>
+  </div>
+</div>
+
+<a href="Projects.html"><button style="width:16.6%; background-position:right;" class="hvr">My Projects</button></a>
+<a href="GlobalImpact.html"><button style="width:16.6%; background-position:right;" class="hvr">Global Impact</button></a>
+
+<p></p>
+
+<h2 style="margin-left:5%; font-size:40px;">What is the Internet? </h2>
+
+<p style="color:white; font-size:20px;margin-left:5%;"> 
+ The Internet is a global computer network providing a variety of information and communication facilities, consisting of interconnected networks using standardized communication protocols, that allows users to send and recieve data.
+</p>
+
+<h2 style="margin-left:5%; font-size:40px;">How is information sent across the Internet?</h2>
+
+<p style="color:white; font-size:20px; margin-left:5%;"> 
+When are user sent information over the Internet this information is split into several packets by TCP with information concerning the destination it is going and coming from both IP addresses. The packets then go through the OSI being made sure the information protocols follow all seven layers in order including application, presentation, and others all the way down where the computers turns the information into bits, so they can be sent over the internet but not before it is scanned by the networks firewall if there is one the packet is sent through the internet in through internet protocol aka IP is directed by routers to its final destiny when a packet reaches its destination it goes through the firewall but Network and then is registered by the TCP of a packet is missing a replacement sent. Once all the packets have arrived, the TCP assemble the packets within the network protocol of the OSI Layers, which is applied to the packet in reverse to as it was sent (physical first application last). Finally the transfer of the package is complete with all data on the receiving computer.
+</p>
+
+<h2 style="margin-left:5%; font-size:40px;">History of the Internet</h2>
+
+<p style="color:white; font-size:20px;"> 
+
+</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'i1')">The ARPANET, 1969</button>
+  <button class="tablinks" onclick="openCity(event, 'i2')">The Domain Name System, 1985</button>
+  <button class="tablinks" onclick="openCity(event, 'i3')">World Wide Web, 1989</button>
+  <button class="tablinks" onclick="openCity(event, 'i4')">What is the internet Today?</button>
+</div>
+
+<div id="i1" class="tabcontent">
+  <h3 style="font-size:30px;margin-left:5%;">ARPANET: Grandfather to the Internet</h3>
+  <img src="ARPANET.jpg" alt="ARPANET Land Coverage Map" align="right" width="30%" height="20%">
+  <p style="font-size:20px; min-height:250px; margin-left:5%;">The ARPANET, or Advanced Research Projects Agency Network, was a network designed by the US military that connected only a handful of computers at government bases and 
+  universities in the Northeastern and Southwestern United States. It allowed those connected to the ARPANET to transmit data to one another in the form of packets, later utilizing TCP/IP. One aspect that led to the success of the ARPANET was fault- tolerancy, meaning if one route for a packet went down, the packet could find an alternate route to it's final destination. This network was later expanded in 1986 to several more universities.
+  This early network of computers paved the way for the internet, which today uses a network sililar to that of the ARPANET, only with millions of nodes instead of just a handful.</p>
+</div>
+
+<div id="i2" class="tabcontent">
+	<h3 style="font-size:30px;margin-left:5%;">DNS: Ease of Access</h3>
+	<img src="DNS.png" alt="ARPANET Land Coverage Map" align="right" width="30%" height="20%">
+	<p style="font-size:20px; margin-left:5%;">The DNS, or the Domain Name System, is a naming system that allows computers to translate Domain names (google.com, NSA.gov, etc) into IP addresses, allowing users to access webpages faster and easier than before.
+	The computer does this by sending the domain name to a DNS server, which translates the Domain Name to an IP address, then the server sends the computer to the correct website/server. This system also divided Domain Names into several categories, based on their function and purpose.</p>
+	<ul style="min-height:200px;">
+		<li style="font-size:20px; margin-left:5%;">.com = Company, a for-profit organization</li>
+		<li style="font-size:20px; margin-left:5%;">.gov = Government Agency</li>
+		<li style="font-size:20px; margin-left:5%;">.edu = School site, for educational pruposes</li>
+		<li style="font-size:20px; margin-left:5%;">.net = Organizations involved in networking technologies</li>
+		<li style="font-size:20px; margin-left:5%;">And Many More </li>
+	</ul>
+</div>
+
+<div id="i3" class="tabcontent">
+  <h3 style="font-size:30px;margin-left:5%;">The World Wide Web: The Information Super Highway</h3>
+  <img src="world.jpg" alt="WWW map" align="right" style="margin-right:5%;" width="30%" height="20%">
+  <p style="font-size:20px; min-height:320px; margin-left:5%;">The World Wide web was created by an English Scientist, Tim-Berners Lee, in 1989, and was released in 1991. This network allowed users all across the globe to access websites with Universal Reasource Locators. Users could also navigate between websites with the use of hyperlinks. This would replace regional networks like ARPANET, or the french Minitel.</p>
+</div>
+
+<div id="i4" class="tabcontent">
+  <h3 style="font-size:30px;margin-left:5%;">Internet Today</h3>
+  <img src="timeline.jpeg" alt="ARPANET Land Coverage Map" align="right" style="margin-right:5%;" width="30%" height="20%">
+  <p style="font-size:20px; min-height:320px; margin-left:5%;">The Internet is currently a wide range of things. It is a place to start Bussinesses. It is a place to learn new skills, like coding, Biology, or History. It is a place where one can find new friends, who share their interests. The ease of access allowed by the fact that most commercial devices sold today can access the internet
+  has had an explosion on what is possible to do with the internet. The increased number of nodes, and higher transfer speeds has allowed faster and more convienent access to the internet.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</html>

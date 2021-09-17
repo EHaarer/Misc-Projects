@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html style="background-image:url(background2.jpg);font-family:Helvetica;">
+
+<header>
+<title>Cloud</title>
+</header>
+<style>
+.dropbtn {
+    background-color: black;
+	margin-top: 5%;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    border: 3px;
+	width: 250%;
+}
+.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 14.9%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+	background-color:rgb(222, 222, 222);
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+	background-color: rgb(232, 76, 61);
+	color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(232, 76, 61);
+		color: white;
+}
+
+.hvr {
+	text-decoration: none;
+	background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    border: 3px;
+	width: 250%;
+}
+
+.hvr:hover {
+	background-color: rgb(232, 76, 61);
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: rgb(222, 222, 222);
+	border:2px solid black;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: rgb(222, 222, 222);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgb(232, 76, 61);
+	color:white;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: rgb(232, 76, 61);
+	color:white;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+	background-color: white;
+    padding: 6px 12px;
+}
+
+</style>
+
+<h1 style="margin-left: 6.8%; font-family: Impact; color: white:">Data and the Cloud</h1>
+
+
+<a href="Homepage.html"><button class="hvr" style="width:16.6%; background-position:right;">Home</button></a>
+<a href="Innovations.html"><button class="hvr" style="width:16.6%; background-position:right;">Innovations</button></a>
+<a href="Abstractions.html"><button class="hvr" style="width:16.6%; background-position:right;">My Abstractions</button></a>
+
+<div class="dropdown" style="width:15%;">
+	<a href="InternetofThings.html"><button class="dropbtn" style="width:100%; background-position:right;">Internet of Things</button></a>
+	<div class="dropdown-content">
+		<a href="IPLayers.html">IP Layers</a>
+		<a href="Cybersecurity.html">Cybersecurity</a>
+		<a href="Cloud.html">Data and the Cloud</a>
+  </div>
+</div>
+
+<a href="Projects.html"><button style="width:16.6%; background-position:right;" class="hvr">My Projects</button></a>
+<a href="GlobalImpact.html"><button style="width:16.6%; background-position:right;" class="hvr">Global Impact</button></a>
+
+<p></p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'C1')">What is Cloud Computing?</button>
+  <button class="tablinks" onclick="openCity(event, 'C2')">Positive Impact</button>
+  <button class="tablinks" onclick="openCity(event, 'C3')">Negative Impact</button>
+  <button class="tablinks" onclick="openCity(event, 'C4')">Visual Representation</button>
+</div>
+
+<div id="C1" class="tabcontent">
+  <h3>What is Cloud Computing?</h3>
+  <p style="font-size:20px;" >Cloud computing is the editing of files that aren't stored on one's own computer, but instead are stored on a remote server. This allows a single user to access the files form multipule different cmputer, at any location, or several users to access, download, or edit the data simultaneously. This data is usually only accessable if a user is invited to own the file, or if they upload a file themselves, and the data is encrypted as to deter hackers or other unwanted persons from accessing the data. </p>
+  <h3>Who owns the servers, or holds the data?</h3>
+  <p style="font-size:20px;" >Many corperations either provide services that utilize cloud technology to allow individuals or companies to create and edit information stored on their servers, or they simply allow others space on their servers to hold on to or share the data. Some companies even own their own, personal clouds! </p>
+  <h4>Real Wold Examples of Cloud technology/Cloud Services </h4>
+  <ul>
+	<li>Google Drive</li>
+	<li>Microsoft One Note</li>
+	<li>Microsoft Azure</li>
+	<li>Hotmail/Gmail/other E-mail Services</li>
+	<li>Dropbox</li>
+	<li>IBM Cloud</li>
+  </ul>
+</div>
+
+<div id="C2" class="tabcontent">
+	<h3>Positive Impacts of Cloud Computing</h3>
+	<ul>
+		<li style="font-size:20px"><b>Productivity:</b> Company workers can access their files more conviently as they don't have to be at a specific computer or nework to edit, observe, or correct company data such as spreadsheets, presentations, or simply important files.</li>
+		<li style="font-size:20px"><b>Backups:</b> Users can back up their files to the cloud, for safety ad convienence. In case a user's files are corrupted or their files are lost (flashdrive) then they can usually recieve their most recent copy that had been uploaded to the cloud. </li>
+		<li style="font-size:20px"><b>Cost-efficent:</b> Companies don't have to spend time, money and reasources creating aand maintaining a centeral data center for their offices, and can instead rely on provided services to maintain and upkeep servers for them.</li>
+	</ul>
+</div>
+
+<div id="C3" class="tabcontent">
+	<h3>Negative Impacts of Cloud Computing</h3>
+	<ul>
+		<li style="font-size:20px;"><b>Whose Data is it Anyway?:</b> Companies who hold users data hold the data on their own servers, meaning that these companies can access any data stored on their server, potentially having access to confidential and private information. This means these companies can invade the privacy of any who use their cloud- computing services.</li>
+		<li style="font-size:20px;"><b>Cloud Down:</b> If a cloud service is hit with a Ddos attack, or a similar attack of sorts, then a commpany would be unable to access their data. Furthermore, Hackers would potentially be able to access a company's confidential information, putting that company's financial future at risk, as their corperat secrets could be leaked over the internet.</li>
+		<li style="font-size:20px;"><b>Internet Restriction:</b> Any files stored primarily on the cloud will become unattainable or unuseable if the internet speeds are too slow to access the data or the user has no connection at all to the internet. This would be even more harmful to a company who has their files primarily on the cloud- and their internet goes down.</li>
+	</ul>
+</div>
+
+<div id="C4" class="tabcontent">
+	<h3>Visual Representation of Cloud Computing:</h3>
+	<img src="cloudv.jpg" alt="HTC Vive" width="36%" height="25%" hspace="10%">
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</html>
